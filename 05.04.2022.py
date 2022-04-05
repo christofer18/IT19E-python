@@ -9,10 +9,10 @@ start_x = 0
 start_y = 0
 
 def print_kaart():
-    print(rida1)
-    print(rida2)
-    print(rida3)
-    print(rida4)
-    print(rida5)
+    print(map[0])
+    print(map[1])
+    print(map[2])
+    print(map[3])
+    print(map[4])
 
 print_kaart()
