@@ -11,15 +11,19 @@ sein = 1
 
 start_x = 0
 start_y = 0
-#2 1
+#2 1 praegused kordinaadid
 def saab_liikuda_paremale(map, praegused_kordinaadid):
+    y = praegused_kordinaadid[2]
+    x = praegused_kordinaadid[1]
     print("Praegused kordinaadid")
     print(praegused_kordinaadid)
-    print(map[2][2] == vaba_tee)
+    print(map[y][x] == vaba_tee)
     print("parem")
     return False
 
 def saab_liikuda_alla(map, praegused_kordinaadid):
+    y = praegused_kordinaadid[1]
+    x = praegused_kordinaadid[2]
     print("Praegused kordinaadid")
     print(praegused_kordinaadid)
     print(map[3][1] == vaba_tee)
@@ -27,6 +31,8 @@ def saab_liikuda_alla(map, praegused_kordinaadid):
     return False
 
 def saab_liikuda_vasakule(map, praegused_kordinaadid):
+    y = praegused_kordinaadid[1]
+    x = praegused_kordinaadid[0]
     print("Praegused kordinaadid")
     print(praegused_kordinaadid)
     print(map[2][0] == vaba_tee)
@@ -34,6 +40,8 @@ def saab_liikuda_vasakule(map, praegused_kordinaadid):
     return False
 
 def saab_liikuda_ules(map, praegused_kordinaadid):
+    y = praegused_kordinaadid[0]
+    x = praegused_kordinaadid[1]
     print("Praegused kordinaadid")
     print(praegused_kordinaadid)
     print(map[1][0] == vaba_tee)
@@ -47,13 +55,9 @@ def print_kaart():
     print(map[3])
     print(map[4])
 
-print(saab_liikuda_paremale(map, [start_x, start_y]))
-print(saab_liikuda_paremale(map, [start_x, start_y]))
-print(saab_liikuda_alla(map, [start_x, start_y]))
+print(saab_liikuda_paremale(map, [1, 1]))
 print(saab_liikuda_alla(map, [1, 1]))
-print(saab_liikuda_vasakule(map, [start_x, start_y]))
 print(saab_liikuda_vasakule(map, [1, 1]))
-print(saab_liikuda_ules(map, [start_x, start_y]))
 print(saab_liikuda_ules(map, [1, 1]))
 
 print_kaart()
